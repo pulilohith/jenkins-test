@@ -16,7 +16,7 @@ job('create a maven project using DSL'){
 
     }
     publishers{
-        archiveArtifacts '**/*.war'
+        archiveArtifacts '**/*.jar'
     }
 
 }
