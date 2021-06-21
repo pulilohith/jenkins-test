@@ -5,7 +5,7 @@ job('create a maven project using DSL'){
         numToKeep(3)
     }
     scm{
-        github("https://github.com/anshulc55/Jenkins_Upgradev3.git",'master')
+        github("https://github.com/anshulc55/Jenkins_Upgradev3",'master')
 
     }
     triggers{
@@ -16,7 +16,7 @@ job('create a maven project using DSL'){
 
     }
     publishers{
-        archiveArtifacts '**/*.jar'
+        archiveArtifacts '**/*.war'
     }
 
 }
