@@ -1,5 +1,5 @@
 job('create a maven project using DSL'){
-    description('This is my first DSL project created on' ${new Date()} )
+    description("This is my first DSL project created on ${new Date()}" )
     logRotator{
         daysToKeep(2)
         numToKeep(3)
