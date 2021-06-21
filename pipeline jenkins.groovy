@@ -19,5 +19,10 @@ pipeline{
                 echo "Hi lohith your professional CI engineer"
             }
         }
+       stage("senior CI enginner"){
+            steps{
+                echo "Hi lohith your senior Devops CI engineer"
+            }
+        }
     }
 }
