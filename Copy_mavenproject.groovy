@@ -5,18 +5,18 @@ job('create a maven project using DSL'){
         numToKeep(3)
     }
     scm{
-        github('https://github.com/anshulc55/Jenkins_Upgradev3.git','master')
+        github("https://github.com/anshulc55/Jenkins_Upgradev3.git",'master')
 
     }
     triggers{
         scm('* * * * *')
     }
     steps{
-        maven('clean package')
+        maven('clean package'.'maven-samples/single-module/pom.xml')
 
     }
     publishers{
-        archiveArtifacts('**/*.jar')
+        archiveArtifacts '**/*.jar'
     }
 
 }
