@@ -12,7 +12,7 @@ job('create a maven project using DSL'){
         scm('* * * * *')
     }
     steps{
-        maven('clean package'.'maven-samples/single-module/pom.xml')
+        maven('clean package','maven-samples/single-module/pom.xml')
 
     }
     publishers{
